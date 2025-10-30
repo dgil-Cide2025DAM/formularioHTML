@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Formulario</title>
     <style>
       form label {
         display: block;
@@ -18,22 +18,91 @@
   </head>
   <body>
     <header>
-      <li class="navbar">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-      </li>
+      <nav>
+        <li class="navbar">
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+        </li>
+      </nav>
     </header>
     <main>
-      <form action="">
-        <options>
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-        </options>
+      <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required />
+
+        <label for="edad">Edad</label>
+        <input type="text" id="edad" name="edad" required />
+
+        <label for="correo_electronico">Correo Electronico</label>
+        <input type="email" id="correo" name="correo" required />
+
+        <label for="selector">Selector</label>
+        <select id="selector" name="selector" multiple required>
+          <optgroup label="Consolas de Casa">
+            <option value="PS5">PS5</option>
+            <option value="Xbox Series X">Xbox Series X</option>
+            <option value="Xbox Series S">Xbox Series S</option>
+            <option value="Altres Consoles de Casa">
+              Altres Consoles de Casa
+            </option>
+          </optgroup>
+          <optgroup label="Consoles Portatiles">
+            <option value="Nintendo Switch 2">Nintendo Switch 2</option>
+            <option value="Nintendo Switch Lite">Nintendo Switch Lite</option>
+            <option value="Altes consoles portàtils">
+              Altes consoles portàtils
+            </option>
+          </optgroup>
+        </select>
+        <label for="boton">Boton</label>
+        <input
+          type="radio"
+          id="boton_0"
+          name="boton"
+          value="option1"
+          required
+        />
+        <label for="boton_0">Ingles</label>
+        <input
+          type="radio"
+          id="boton_1"
+          name="boton"
+          value="option2"
+          required
+        />
+        <label for="boton_1">Catalan</label>
+        <input
+          type="radio"
+          id="boton_2"
+          name="boton"
+          value="option3"
+          required
+        />
+        <label for="boton_2">Castellano</label>
+        <label for="newsletter">Newsletter (Optional)</label>
+        <input
+          type="radio"
+          id="newsletter_0"
+          name="newsletter"
+          value="option1"
+        />
+        <label for="newsletter_0">Si</label>
+        <input
+          type="radio"
+          id="newsletter_1"
+          name="newsletter"
+          value="option2"
+        />
+        <label for="newsletter_1">No</label>
+        <label for="comentarios">Comentarios</label>
+        <input type="text" id="comentarios" name="comentarios" required />
+        <button type="submit">Confirmar</button>
       </form>
     </main>
-    }
   </body>
 </html>
